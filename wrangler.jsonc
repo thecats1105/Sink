@@ -8,9 +8,7 @@
     "html_handling": "drop-trailing-slash"
   },
   "compatibility_date": "2025-05-08",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
+  "compatibility_flags": ["nodejs_compat"],
   "keep_vars": true,
   "upload_source_maps": true,
   "observability": {
@@ -34,8 +32,19 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "preview_id": "ef93d42dc4b34969bab404d2e80f8dd3",
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3" // IMPORTANT: Change this to your KV namespace ID
+      "preview_id": "71ab7993d85643d7933c2a753663329e",
+      "id": "71ab7993d85643d7933c2a753663329e" // IMPORTANT: Change this to your KV namespace ID
+    }
+  ],
+  // Custom domain configuration
+  "routes": [
+    {
+      "pattern": "sink.thecats.kr",
+      "custom_domain": true
+    },
+    {
+      "pattern": "s.thecats.kr",
+      "custom_domain": true
     }
   ],
   "r2_buckets": [
