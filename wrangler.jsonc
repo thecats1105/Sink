@@ -60,5 +60,12 @@
   ],
   "triggers": {
     "crons": ["0 0 * * *"] // Run backup task daily at 00:00 UTC
-  }
+  },
+  // Custom domain configuration
+  "routes": [
+    {
+      "pattern": "s.thecats.kr",
+      "custom_domain": true
+    }
+  ]
 }
